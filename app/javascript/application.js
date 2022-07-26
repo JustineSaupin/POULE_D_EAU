@@ -2,3 +2,10 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
+
+
+import { initComing } from "./components/coming";
+
+document.addEventListener("turbo:load", () => {
+  initComing();
+});
